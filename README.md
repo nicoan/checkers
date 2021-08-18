@@ -12,9 +12,9 @@ The project lacks of tests, it would be good to test at least the engine. Most c
 - python = 2.7.16
 - make >= 4.2.1
 
-## Setup
+## Build
 
-```make install```
+```make```
 
 ## Play
 

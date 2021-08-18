@@ -1,7 +1,7 @@
-all: install run
+all: build
 
 # Build engine and install python dependencies
-install: venv src/engine/mm.so
+build: venv src/engine/mm.so
 	. venv/bin/activate && pip install -r requirements.txt
 
 # Create venv if it does not exist
@@ -20,3 +20,5 @@ clean:
 	find -iname "*.pyc" -delete
 	find -iname "*.o" -delete
 	find -iname "*.so" -delete
+
+.PHONY: all build run clean
